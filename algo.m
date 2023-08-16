@@ -68,7 +68,7 @@ classdef algo
             tic_total = tic;
             
             scaleA            = 1.0; % initialize
-            scaleab           = 1.0; % initialize
+            scaleab           = ones(1,tend); % initialize
             
             %===== demography ======%
             algo.compdemo(); % recomputes demographic transition
@@ -96,7 +96,7 @@ classdef algo
                 hh.HHall(starttime, (iter == 1), scaleA);
                 
                 global Cons Consz Nz LS notretz ellz thetaz A Az ab abz iv ivz Nw Nr;
-                global P tauW TaxP Taxl Rev CG Exp tauWz pz taulz tauC cGv Nv PB DG;
+                global P tauW Rev CG Exp tauWz pz taulz tauC cGv Nv PB DG;
                 global edy edg edl eda ediv edab edw gamz Savz;
 
                 %===== aggregation ======%
