@@ -18,7 +18,7 @@ classdef hh
             
             % CONSUMPTION
             pcz(sage:nag,z)      = 1+tauCz(sage:nag,z);
-            Consz(fag:nag,z)     = (pcz(fag:nag,z).*lambdaz(fag:nag,z)).^(-sigma);
+            Consz(sage:nag,z)     = (pcz(sage:nag,z).*lambdaz(sage:nag,z)).^(-sigma);
             
             % HOURS SUPPLY
             ellz(sage:nag,z)     = ((wz(sage:nag,z).*(1-tauWz(sage:nag,z)).*thetaz(sage:nag,z)./pcz(sage:nag,z).*(Consz(sage:nag,z).^(-1/sigma)))./parlv0(sage:nag)).^sigL;
