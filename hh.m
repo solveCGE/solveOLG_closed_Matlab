@@ -105,7 +105,7 @@ classdef hh
             end
             
             if (abs(Savz(nag,z)) > atol)
-                HH_nonconvz(z) = 1; % counter
+                HH_nonconvz(nag,z) = 1; % counter
             end
 
         end
