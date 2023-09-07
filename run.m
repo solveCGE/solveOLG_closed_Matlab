@@ -69,7 +69,7 @@ gamv(60:nag,:) = 1-(1-gamv(60:nag,:))*0.9; gamv(nag,:)=0; gamz = fun.per2coh(gam
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Solve transition path to new steady state
-algo.solveOLG(1, 200, 1e-2, [1.0,1.0,1.0,0.5,0.7]); % solveOLG(starttime, maxiter, tol, damping_factors)
+algo.solveOLG(1, 200, 1e-4, [1.0,1.0,1.0,0.5,0.7]); % solveOLG(starttime, maxiter, tol, damping_factors)
 
 % some transition plots
 figure();

@@ -215,7 +215,7 @@ classdef algo
             
             toc_total = toc(tic_total);
             fprintf("Computation time:\t%.3f sec\n", toc_total);
-            fprintf("CHECK SOLUTION:\t\t%.5f\n",sum(abs(edy)+abs(edl)+abs(edg)+abs(eda)+abs(ediv)+abs(edab)));
+            fprintf("CHECK SOLUTION:\t\t%.5f\n",max(abs(edy)+abs(edl)+abs(edg)+abs(eda)+abs(ediv)+abs(edab)));
 
         end
 
